@@ -35,10 +35,22 @@ st.write(f"""
     Siz **{clf_name}** klassifikatoridan foydalyapsiz
 """)
 
-if clf_name == 'SVM':
-    clf = SVC(C=C)
-elif clf_name == 'KNN';
-    clf =KNeighborsClassifier(n_neighbors=K)
-else:
-    clf = RandomForestClassifier(n_estimators=max_depth,
-        max_depth=n_estimators, random_state=42)
+if clf_name == 'SVM':     
+    clf = SVC(C=C) 
+elif clf_name == 'KNN':     
+    clf = KNeighborsClassifier(n_neighbors=K) 
+else:     
+    clf = RandomForestClassifier(n_estimators=max_depth,  
+         max_depth=n_estimators, random_state=42)
+
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, random_state=42)
+
+clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
+
+accuracy = accuracy_score(y_test, y_pred)
+
+st.write(f'Clssifier: **{clf_name}**')
+st.write(f'Accuracy: **{round(accuracy*100, 2)}%**')
