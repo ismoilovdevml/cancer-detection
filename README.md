@@ -1,4 +1,4 @@
-# cancer-detection
+# Cancer Detection
 Cancer Detection Machine Learning Model
 
 Saratonni Aniqlash uchun yozilgan machine learning model <br>
