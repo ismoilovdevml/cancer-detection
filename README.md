@@ -4,8 +4,8 @@ Cancer Detection Machine Learning Model
 Saratonni Aniqlash uchun yozilgan machine learning model <br>
 Web sayt live: https://cancer-detection-ml-model.streamlit.app/ <br>
 
-![alt text](https://github.com/ismoilovdevml/cancer-detection/assets/1-cancer.png)
-![alt text](https://github.com/ismoilovdevml/cancer-detection/assets/2-cancer.png)
+![alt text](https://github.com/ismoilovdevml/cancer-detection/blob/master/assets/1-cancer.png)
+![alt text](https://github.com/ismoilovdevml/cancer-detection/blob/master/assets/2-cancer.png)
 
 Loyihani ishga tuhshirish <br>
 
@@ -22,7 +22,8 @@ Virtual environmentga kiring
 pipenv shell
 ```
 <br>
-Kerakli kutubxonalarni o'rnatib oling
+Kerakli kutubxonalarni o'rnatib oling <br>
+
 ```bash
 pipenv install streamlit
 pipenv install scikit-learn
